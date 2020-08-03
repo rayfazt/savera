@@ -1,5 +1,5 @@
-name: hello_world
-description: flutter program to display hello world
+name: flutter_app2
+description: Write Your First App
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -23,6 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  english_words: ^3.1.5
 
 
   # The following adds the Cupertino Icons font to your application.
