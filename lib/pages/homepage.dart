@@ -35,9 +35,16 @@ class _HomeState extends State<HomePage> {
           RawMaterialButton(
             onPressed: (){},
             fillColor: Colors.red[400],
-            child: Icon(
-              Icons.warning,
-              size: 100.0,
+            child: IconButton(
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context)=>SecondRoute()
+                    ),
+                );
+              },
+              icon : Icon(Icons.warning),
+              iconSize: 100.0,
               color: Colors.white,
             ),
             padding: EdgeInsets.all(50.0),
@@ -72,6 +79,25 @@ class _HomeState extends State<HomePage> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class SecondRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Second Route"),
+      ),
+      body: Center(
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Go back!'),
+        ),
       ),
     );
   }
