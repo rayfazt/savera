@@ -2,11 +2,13 @@ import 'package:bloc/bloc.dart';
 import '../pages/homepage.dart';
 import '../pages/profilepage.dart';
 import '../pages/contact.dart';
+import '../pages/panicpage.dart';
 
 enum NavigationEvents {
   HomePageClickedEvent,
   ProfileClickedEvent,
   ContactClickedEvent,
+  PanicPageClickedEvent,
 }
 
 abstract class NavigationStates {}
@@ -26,6 +28,9 @@ class NavigationBloc extends Bloc<NavigationEvents, NavigationStates> {
         break;
       case NavigationEvents.ContactClickedEvent:
         yield ContactPage();
+        break;
+      case NavigationEvents.PanicPageClickedEvent:
+        yield PanicPage();
         break;
     }
   }

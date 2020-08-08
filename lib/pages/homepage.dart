@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../nav_bloc/navigation_bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomePage extends StatefulWidget with NavigationStates {
   @override
@@ -37,11 +39,7 @@ class _HomeState extends State<HomePage> {
             fillColor: Colors.red[400],
             child: IconButton(
               onPressed: (){
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context)=>SecondRoute()
-                    ),
-                );
+                BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.PanicPageClickedEvent);
               },
               icon : Icon(Icons.warning),
               iconSize: 100.0,
@@ -91,14 +89,63 @@ class SecondRoute extends StatelessWidget {
       appBar: AppBar(
         title: Text("Second Route"),
       ),
-      body: Center(
-        child: RaisedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Go back!'),
+      body:  Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        SizedBox(height: 150, width: 200,),
+        Text(
+          'Contact Person',
+          style: TextStyle(
+            fontSize: 42,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
         ),
-      ),
-    );
+        Text(
+          'Email : 13519038@std.stei.itb.ac.id',
+          textAlign: TextAlign.right,
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white,
+
+          ),
+        ),
+        Text(
+          'ID Line : ridhodaffasyah',
+          textAlign: TextAlign.start,
+
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white,
+          ),
+        ),
+      ],
+    ),
+
+//      Row(
+//        mainAxisAlignment: MainAxisAlignment.spaceAround,
+//        crossAxisAlignment: CrossAxisAlignment.start,
+//        children: <Widget>[
+//          Text('Hello World!'),
+//          FlatButton(
+//            onPressed: () {},
+//            color: Colors.amber,
+//            child: Text("Click me"),
+//          ),
+//          Container(
+//            color: Colors.red,
+//            padding: EdgeInsets.all(30.0),
+//            child: Text('inside container'),
+//          ),
+//        ],
+//      ),
+//
+//        child: RaisedButton(
+//          onPressed: () {
+//            Navigator.pop(context);
+//          },
+//          child: Text('Go back!'),
+//        ),
+      );
   }
 }
