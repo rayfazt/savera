@@ -122,30 +122,6 @@ class SecondRoute extends StatelessWidget {
       ],
     ),
 
-//      Row(
-//        mainAxisAlignment: MainAxisAlignment.spaceAround,
-//        crossAxisAlignment: CrossAxisAlignment.start,
-//        children: <Widget>[
-//          Text('Hello World!'),
-//          FlatButton(
-//            onPressed: () {},
-//            color: Colors.amber,
-//            child: Text("Click me"),
-//          ),
-//          Container(
-//            color: Colors.red,
-//            padding: EdgeInsets.all(30.0),
-//            child: Text('inside container'),
-//          ),
-//        ],
-//      ),
-//
-//        child: RaisedButton(
-//          onPressed: () {
-//            Navigator.pop(context);
-//          },
-//          child: Text('Go back!'),
-//        ),
       );
   }
 }
