@@ -126,6 +126,10 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
                       MenuItem(
                         icon: Icons.border_color,
                         title: "Contact Us",
+                        onTap: () {
+                          onIconPressed();
+                          BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.ContactClickedEvent);
+                        }
                       ),
                       MenuItem(
                         icon: Icons.settings,
