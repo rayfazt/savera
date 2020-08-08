@@ -33,20 +33,31 @@ class _PanicPageState extends State<PanicPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Timer App"),
+        title: Center(
+          child: Text("Panic Button"),
+        ),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            (_counter > 0)
+            Text(
+                "Tetap tenang",
+              style: TextStyle(
+                fontSize: 30.0,
+                color: Colors.yellow,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+
+            (_counter > 0 )
                 ? Text("")
                 : Text(
-              "DONE!",
+              "Alarm telah aktif!",
               style: TextStyle(
-                color: Colors.green,
+                color: Colors.red[600],
                 fontWeight: FontWeight.bold,
-                fontSize: 48,
+                fontSize: 35.0,
               ),
             ),
             Text(
@@ -56,13 +67,37 @@ class _PanicPageState extends State<PanicPage> {
                 fontSize: 48,
               ),
             ),
-            RaisedButton(
-              onPressed: () => _startTimer(),
-              child: Text("Start 10 second count down"),
+            RawMaterialButton(
+              onPressed: (){},
+              fillColor: Colors.red[400],
+              child: IconButton(
+                onPressed: () => _startTimer(),
+                icon : Icon(Icons.warning),
+                iconSize: 50.0,
+                color: Colors.white,
+              ),
+              padding: EdgeInsets.all(50.0),
+              shape: CircleBorder(),
             ),
+            SizedBox(height: 30.0),
+            Text(
+              'APAKAH ANDA YAKIN?\n '
+              'TEKAN TOMBOL DI ATAS SEKALI LAGI UNTUK MENGAKTIFKAN PANIC BUTTON',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.yellow,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+//            RaisedButton(
+//              onPressed: () => _startTimer(),
+//              child: Text("Start 10 second count down"),
+//            ),
           ],
         ),
       ),
+      backgroundColor: Colors.grey[800],
     );
   }
 }
