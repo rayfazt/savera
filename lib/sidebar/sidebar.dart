@@ -122,6 +122,10 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
                       MenuItem(
                         icon: Icons.call,
                         title: "Telepon Darurat",
+                          onTap: () {
+                            onIconPressed();
+                            BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.UrgentPageClickedEvent);
+                         },
                       ),
                       MenuItem(
                         icon: Icons.border_color,

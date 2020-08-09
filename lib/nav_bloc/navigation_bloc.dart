@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:savera/pages/urgentpage.dart';
 import '../pages/homepage.dart';
 import '../pages/profilepage.dart';
 import '../pages/contact.dart';
@@ -9,6 +10,7 @@ enum NavigationEvents {
   ProfileClickedEvent,
   ContactClickedEvent,
   PanicPageClickedEvent,
+  UrgentPageClickedEvent,
 }
 
 abstract class NavigationStates {}
@@ -31,6 +33,9 @@ class NavigationBloc extends Bloc<NavigationEvents, NavigationStates> {
         break;
       case NavigationEvents.PanicPageClickedEvent:
         yield PanicPage();
+        break;
+      case NavigationEvents.UrgentPageClickedEvent:
+        yield UrgentPage();
         break;
     }
   }
