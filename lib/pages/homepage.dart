@@ -80,7 +80,7 @@ class _HomeState extends State<HomePage> {
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 20.0,
-              color: Colors.grey[500],
+              color: Colors.white[500],
             ),
           ),
         ],
