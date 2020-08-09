@@ -12,7 +12,7 @@ class _HomeState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[800],
+      backgroundColor: const Color(0x040F13),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[

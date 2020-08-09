@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          scaffoldBackgroundColor: Colors.grey[800],
+          scaffoldBackgroundColor: const Color(0x040F13),
           primaryColor: Colors.grey[800]
       ),
       home: SideBarLayout(),
