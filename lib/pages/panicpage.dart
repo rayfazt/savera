@@ -73,10 +73,10 @@ class _PanicPageState extends State<PanicPage> {
               child: IconButton(
                 onPressed: () => _startTimer(),
                 icon : Icon(Icons.warning),
-                iconSize: 50.0,
+                iconSize: 100.0,
                 color: Colors.white,
               ),
-              padding: EdgeInsets.all(50.0),
+              padding: EdgeInsets.all(25.0),
               shape: CircleBorder(),
             ),
             SizedBox(height: 30.0),
