@@ -42,7 +42,7 @@ class UrgentPage extends StatelessWidget with NavigationStates {
               '118 / 119',
               textAlign: TextAlign.start,
               style: TextStyle(
-                fontSize: 45,
+                fontSize: 46,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
