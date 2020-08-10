@@ -7,7 +7,7 @@ Kelompok 27 - Ifrit Anonim
 - Delisha Azza Naadira (16519022) - add text on homepage and change text display
 - Imam Nurul Hukmi (16519025) - contact page sama Telepon darurat page
 - Ridho Daffasyah (16519027) - sound panic button, fix bug font
-- Gina Septiyani Putri (16519301)
+- Gina Septiyani Putri (16519301) - update font
 - Azka Alya Ramadhan (16519331) - changing the color of "savera" under the panic button from grey into white to make it more lookful and brightful
 - Rizky Anggita S Siregar (16519348) - panicpage, add timer, fixing bug after sound added, etc
 - Stella Ribli (16519358) - ganti font size dan warna
