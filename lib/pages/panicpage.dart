@@ -50,6 +50,7 @@ class _PanicPageState extends State<PanicPage> {
           _counter--;
         } else {
           _timer.cancel();
+          _playSound();
         }
       });
     });
@@ -97,7 +98,6 @@ class _PanicPageState extends State<PanicPage> {
               onPressed: () => _startTimer(),
               fillColor: Colors.red[400],
               child: IconButton(
-                onPressed: _playSound,
                 icon: Icon(Icons.warning),
                 iconSize: 100.0,
                 color: Colors.white,
