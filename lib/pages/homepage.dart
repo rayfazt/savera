@@ -19,10 +19,10 @@ class _HomeState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.fromLTRB(0.0, 100.0, 0.0, 0.0),
             child: Text(
-              'Hai, Joe.',
+              'Hai, Johnny.',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontFamily: 'Proxima Nova'
+                fontFamily: 'Proxima Nova',
                 fontWeight: FontWeight.bold,
                 fontSize: 30.0,
                 color: Colors.white,
@@ -35,7 +35,7 @@ class _HomeState extends State<HomePage> {
               'Apakah kamu melihat atau mengalami kekerasan seksual?',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontFamily: 'Proxima Nova'
+                fontFamily: 'Proxima Nova',
                 fontSize: 20.0,
                 color: Colors.white,
               ),
@@ -62,11 +62,10 @@ class _HomeState extends State<HomePage> {
               'TEKAN TOMBOL DI ATAS UNTUK MENGAKTIFKAN PANIC BUTTON',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontFamily: 'Proxima Nova'
+                fontFamily: 'Proxima Nova',
                 fontWeight: FontWeight.bold,
                 fontSize: 20.0,
                 color: Colors.yellow,
-                fontWeight: FontWeight.bold,
               ),
             ),
           ),
@@ -76,8 +75,8 @@ class _HomeState extends State<HomePage> {
               'atau tekan tulisan ini jika kamu ingin membantu korban di sekitarmu',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontFamily: 'Proxima Nova'
-                fontWeight: FontWeight.thin,
+                fontFamily: 'Proxima Nova',
+                fontWeight: FontWeight.w100,
                 fontSize: 19.0,
                 color: Colors.grey,
               ),
@@ -87,8 +86,8 @@ class _HomeState extends State<HomePage> {
             'savera',
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontFamily: 'Proxima Nova'
-              fontWeight: FontWeight.thin,
+              fontFamily: 'Proxima Nova',
+              fontWeight: FontWeight.w100,
               fontSize: 20.0,
               color: Colors.white,
             ),
