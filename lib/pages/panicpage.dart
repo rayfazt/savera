@@ -1,6 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../nav_bloc/navigation_bloc.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:audioplayers/audioplayers.dart';
+import 'dart:io';
 
 class PanicPage extends StatefulWidget with NavigationStates {
   PanicPage({Key key}) : super(key: key);
@@ -9,7 +13,29 @@ class PanicPage extends StatefulWidget with NavigationStates {
   _PanicPageState createState() => _PanicPageState();
 }
 
+enum PlayerState { stopped, playing }
+
 class _PanicPageState extends State<PanicPage> {
+  String mp3Uri = '';
+  void _playSound() {
+    AudioPlayer player = AudioPlayer();
+    player.play(mp3Uri);
+  }
+
+  void _loadSound() async {
+    final ByteData data = await rootBundle.load('assets/savera.mp3');
+    Directory tempDir = await getTemporaryDirectory();
+    File tempFile = File('${tempDir.path}/savera.mp3');
+    await tempFile.writeAsBytes(data.buffer.asUint8List(), flush: true);
+    mp3Uri = tempFile.uri.toString();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _loadSound();
+  }
+
   int _counter = 3;
   Timer _timer;
 
@@ -68,10 +94,10 @@ class _PanicPageState extends State<PanicPage> {
               ),
             ),
             RawMaterialButton(
-              onPressed: () {},
+              onPressed: () => _startTimer(),
               fillColor: Colors.red[400],
               child: IconButton(
-                onPressed: () => _startTimer(),
+                onPressed: _playSound,
                 icon: Icon(Icons.warning),
                 iconSize: 100.0,
                 color: Colors.white,

@@ -7,10 +7,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
           scaffoldBackgroundColor: const Color(0x040F13),
-          primaryColor: Colors.grey[800]
-      ),
+          primaryColor: Colors.grey[800]),
       home: SideBarLayout(),
     );
   }
