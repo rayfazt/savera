@@ -91,6 +91,7 @@ class _PanicPageState extends State<PanicPage> {
               '$_counter',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
+                color: Colors.white,
                 fontSize: 48,
               ),
             ),
@@ -116,14 +117,10 @@ class _PanicPageState extends State<PanicPage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-//            RaisedButton(
-//              onPressed: () => _startTimer(),
-//              child: Text("Start 10 second count down"),
-//            ),
           ],
         ),
       ),
-      backgroundColor: Colors.grey[800],
+      backgroundColor: Colors.black,
     );
   }
 }
