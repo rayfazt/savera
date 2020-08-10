@@ -39,13 +39,14 @@ class _HomeState extends State<HomePage> {
             ),
           ),
           RawMaterialButton(
-            onPressed: (){},
+            onPressed: () {},
             fillColor: Colors.red[400],
             child: IconButton(
-              onPressed: (){
-                BlocProvider.of<NavigationBloc>(context).add(NavigationEvents.PanicPageClickedEvent);
+              onPressed: () {
+                BlocProvider.of<NavigationBloc>(context)
+                    .add(NavigationEvents.PanicPageClickedEvent);
               },
-              icon : Icon(Icons.warning),
+              icon: Icon(Icons.warning),
               iconSize: 100.0,
               color: Colors.white,
             ),
@@ -80,7 +81,7 @@ class _HomeState extends State<HomePage> {
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 20.0,
-              color: Colors.white[500],
+              color: Colors.white,
             ),
           ),
         ],

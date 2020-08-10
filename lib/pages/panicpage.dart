@@ -10,11 +10,11 @@ class PanicPage extends StatefulWidget with NavigationStates {
 }
 
 class _PanicPageState extends State<PanicPage> {
-  int _counter = 10;
+  int _counter = 3;
   Timer _timer;
 
   void _startTimer() {
-    _counter = 10;
+    _counter = 3;
     if (_timer != null) {
       _timer.cancel();
     }
@@ -42,7 +42,7 @@ class _PanicPageState extends State<PanicPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-                "Tetap tenang",
+              "Tetap tenang",
               style: TextStyle(
                 fontSize: 30.0,
                 color: Colors.yellow,
@@ -50,16 +50,16 @@ class _PanicPageState extends State<PanicPage> {
               ),
             ),
 
-            (_counter > 0 )
+            (_counter > 0)
                 ? Text("")
                 : Text(
-              "Alarm telah aktif!",
-              style: TextStyle(
-                color: Colors.red[600],
-                fontWeight: FontWeight.bold,
-                fontSize: 35.0,
-              ),
-            ),
+                    "Alarm telah aktif!",
+                    style: TextStyle(
+                      color: Colors.red[600],
+                      fontWeight: FontWeight.bold,
+                      fontSize: 35.0,
+                    ),
+                  ),
             Text(
               '$_counter',
               style: TextStyle(
@@ -68,11 +68,11 @@ class _PanicPageState extends State<PanicPage> {
               ),
             ),
             RawMaterialButton(
-              onPressed: (){},
+              onPressed: () {},
               fillColor: Colors.red[400],
               child: IconButton(
                 onPressed: () => _startTimer(),
-                icon : Icon(Icons.warning),
+                icon: Icon(Icons.warning),
                 iconSize: 100.0,
                 color: Colors.white,
               ),

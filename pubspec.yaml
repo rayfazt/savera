@@ -62,15 +62,15 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: ProximaNova
+    - family: Proxima Nova
       fonts:
-        - asset: Fonts/Proxima Nova Alt Bold.otf
-        - asset: Fonts/Proxima Nova Alt Light.otf
-        - asset: Fonts/Proxima Nova Black.otf
-        - asset: Fonts/Proxima Nova Bold.otf
-        - asset: Fonts/Proxima Nova Extrabold.otf
-        - asset: Fonts/Proxima Nova Thin.otf
-        - asset: Fonts/ProximaNova-Regular.otf
+        - asset: lib/Fonts/Proxima Nova Alt Bold.otf
+        - asset: lib/Fonts/Proxima Nova Alt Light.otf
+        - asset: lib/Fonts/Proxima Nova Black.otf
+        - asset: lib/Fonts/Proxima Nova Bold.otf
+        - asset: lib/Fonts/Proxima Nova Extrabold.otf
+        - asset: lib/Fonts/Proxima Nova Thin.otf
+        - asset: lib/Fonts/ProximaNova-Regular.otf
 
   #   - family: Trajan Pro
   #     fonts:
