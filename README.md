@@ -4,18 +4,18 @@ Aplikasi Panic Button untuk mencegah kekerasan seksual di ruang publik
 Kelompok 27 - Ifrit Anonim
 
 # Pembagian Tugas
-- Delisha Azza Naadira (16519022)
-- Imam Nurul Hukmi (16519025)
-- Ridho Daffasyah (16519027)
+- Delisha Azza Naadira (16519022) - add text on homepage and change text display
+- Imam Nurul Hukmi (16519025) - contact page sama Telepon darurat page
+- Ridho Daffasyah (16519027) - sound panic button, fix bug font
 - Gina Septiyani Putri (16519301)
-- Azka Alya Ramadhan (16519331)
-- Rizky Anggita S Siregar (16519348)
-- Stella Ribli (16519358)
-- Aindrea Rayhan Supriyanto (16519370)
-- Edwin Stanic Prasetyo (16519374)
-- Rayhan Alghifari Fauzta (16519384)
-- Ryo Richardo (16519400)
-- Muhammad Atthaumar Rifqy (16519426)
+- Azka Alya Ramadhan (16519331) - changing the color of "savera" under the panic button from grey into white to make it more lookful and brightful
+- Rizky Anggita S Siregar (16519348) - panicpage, add timer, fixing bug after sound added, etc
+- Stella Ribli (16519358) - ganti font size dan warna
+- Aindrea Rayhan Supriyanto (16519370) - masukan program layout
+- Edwin Stanic Prasetyo (16519374) - mengganti warna backgroung homepage, sidebar dan menambah font
+- Rayhan Alghifari Fauzta (16519384) - sidebar, homepage, state management (bloc)
+- Ryo Richardo (16519400 - review tampilan, edit panicpage
+- Muhammad Atthaumar Rifqy (16519426) - design panic button
 
 # Cara Menjalankan
 1. Install Flutter. Langkah instalasi dapat dilihat di https://flutter.dev/docs/get-started/install (note: Dart akan otomatis terinstall bersama FLutter).
