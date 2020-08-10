@@ -81,7 +81,7 @@ class _PanicPageState extends State<PanicPage> {
                 : Text(
                     "Alarm telah aktif!",
                     style: TextStyle(
-                      color: Colors.red[600],
+                      color: Colors.red[500],
                       fontWeight: FontWeight.bold,
                       fontSize: 35.0,
                     ),
