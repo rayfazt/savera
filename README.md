@@ -18,7 +18,12 @@ Kelompok 27 - Ifrit Anonim
 - Muhammad Atthaumar Rifqy (16519426)
 
 # Cara Menjalankan
-gatau kak belom jadi hehe
+1. Install Flutter. Langkah instalasi dapat dilihat di https://flutter.dev/docs/get-started/install (note: Dart akan otomatis terinstall bersama FLutter).
+2. Install Android Studio kemudian configure plugin Flutter. Langkah detilnya dapat dilihat di https://flutter.dev/docs/get-started/editor. Tersedia juga instruksi untuk IDE Visual Studio Code.
+3. Set up emulator atau device fisik untuk keperluan testing.
+4. Clone repository dengan `git clone https://github.com/rayfazt/savera.git`
+5. Buka Android Studio dan pastikan emulator atau device fisik sudah siap dijalankan.
+6. Jalankan program dengan membuka folder project savera dan run file `main.dart`
 
 ## Getting Started
 
